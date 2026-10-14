@@ -1,0 +1,250 @@
+# FINAL IMPLEMENTATION PROMPT — STREEMLY+
+
+I have an existing landing page design created with Google Stitch. I have imported the exported files into this Replit project.
+
+Your task is to finish, fix, and implement the existing website as a complete, responsive, functional landing page for my Moroccan streaming subscription business.
+
+IMPORTANT: Work on the existing project. Do not start over or discard the existing Stitch design.
+
+## 1. BRAND NAME
+
+The correct brand name is:
+
+**Streemly+**
+
+Replace every occurrence of "ProStream MA", "ProStream", or any previous business name with "Streemly+" wherever it refers to my brand.
+
+Update the:
+- Website header and logo text.
+- Hero section.
+- Footer.
+- Page title and SEO metadata.
+- Browser tab title.
+- Relevant alt text and brand references.
+
+Create a clean, modern Streemly+ wordmark if the existing logo is editable. Make the plus sign visually distinctive.
+
+Do not rename unrelated dependencies or third-party libraries.
+
+## 2. PRESERVE THE STITCH DESIGN
+
+Inspect all existing project files before editing.
+
+Use the exported Stitch design as the primary reference for the page layout, typography, spacing, component structure, and visual appearance.
+
+Preserve the existing sections and improve their implementation without redesigning everything from scratch.
+
+Keep the complete site in Moroccan Darija, written in Arabic script, with proper right-to-left (RTL) layout.
+
+## 3. BLACK AND YELLOW THEME
+
+Apply a consistent premium sports-streaming visual identity.
+
+Colors:
+- Primary background: #000000
+- Secondary background: #111111
+- Accent yellow: #FFD500
+- Primary text: #FFFFFF
+- Secondary text: #A3A3A3
+
+Use yellow for the prices, buttons, highlights, icons, and important headings.
+
+Use dark pricing cards, subtle yellow borders, polished spacing, and responsive layouts.
+
+Maintain a premium, clean, sports-inspired appearance on mobile, tablet, and desktop.
+
+Do not use unofficial TOD logos or imply that Streemly+ is an official TOD website or authorized reseller unless authorization exists.
+
+## 4. RESTORE AND PRESERVE THE ORIGINAL HERO IMAGE
+
+The original hero image was supplied during the design process, but it did not appear correctly after importing the Stitch files into Replit.
+
+This issue must be investigated and fixed.
+
+First:
+- Inspect all uploaded files and assets in the project.
+- Check the public directory, src/assets, and any available uploaded image files.
+- Inspect the existing hero component and its image references.
+- Check for broken paths, unsupported formats, incorrect filenames, and CSS rules hiding the image.
+
+If the original image file is available:
+- Use that exact image in the hero section.
+- Preserve the original image rather than replacing it with another image.
+- Place it in a permanent project asset directory, such as public/images/, if necessary.
+- Reference it using a valid project-relative URL.
+- Preserve its aspect ratio and use appropriate object-fit and positioning.
+- Ensure it loads in both the Replit preview and the deployed website.
+
+If the original image file is missing:
+- Do not pretend it has been restored.
+- Do not substitute an unrelated stock image, emoji, gradient, or generic placeholder.
+- Clearly tell me that the image file is missing and ask me to upload it.
+- Continue implementing the rest of the website while keeping the hero image location ready for the original asset.
+
+Do not reference an image using a temporary local path that will break after deployment.
+
+## 5. SUBSCRIPTION PLANS
+
+Display exactly these three plans and prices:
+
+PLAN 1
+- Name: اشتراك 3 أشهر
+- Quality: FULL HD
+- Duration: 3 أشهر
+- Price: 180 درهم
+
+PLAN 2
+- Name: اشتراك 6 أشهر
+- Quality: FULL HD
+- Duration: 6 أشهر
+- Price: 350 درهم
+
+PLAN 3
+- Name: اشتراك سنة كاملة
+- Quality: FULL HD
+- Duration: 12 شهر
+- Price: 650 درهم
+
+Each card must contain a prominent price and a working button labeled:
+
+"طلب الاشتراك"
+
+Do not change these prices. Do not invent discounts, technical features, device limits, guarantees, or activation times.
+
+Store the subscription data in one easy-to-edit configuration file or array so I can change the prices later without searching through multiple components.
+
+## 6. WHATSAPP INTEGRATION
+
+My WhatsApp number is:
+
++212627899976
+
+Use this international-format base URL:
+
+https://wa.me/212627899976
+
+Every subscription button must open a WhatsApp chat with a prefilled message for its specific plan.
+
+For the 3-month plan:
+
+سلام، بغيت نعرف التفاصيل ديال اشتراك TOD Full HD لمدة 3 أشهر بثمن 180 درهم.
+
+For the 6-month plan:
+
+سلام، بغيت نعرف التفاصيل ديال اشتراك TOD Full HD لمدة 6 أشهر بثمن 350 درهم.
+
+For the annual plan:
+
+سلام، بغيت نعرف التفاصيل ديال اشتراك TOD Full HD لمدة سنة بثمن 650 درهم.
+
+Generate each link safely using JavaScript encodeURIComponent().
+
+Add a general WhatsApp contact button with a suitable prefilled message.
+
+Make all WhatsApp links work on mobile and desktop. Use appropriate target and security attributes for links opening in new tabs.
+
+Keep the WhatsApp number and messages in one easy-to-edit configuration file.
+
+## 7. PAGE SECTIONS
+
+Implement and preserve these sections:
+
+A. HEADER
+- Streemly+ wordmark.
+- Simple navigation.
+- A prominent WhatsApp contact button.
+
+B. HERO
+Headline:
+"الفرجة اللي كتعشق، اختار ليها الاشتراك المناسب!"
+
+Description:
+"اختار المدة اللي تناسبك، تعرّف على الأثمنة، وتواصل معانا بسهولة عبر واتساب."
+
+Buttons:
+- "شوف العروض" — scrolls to pricing.
+- "تواصل معانا" — opens WhatsApp.
+
+Use the original hero image when available.
+
+C. PRICING
+Display the three exact plans, with responsive pricing cards and working WhatsApp buttons.
+
+D. WHY CHOOSE US
+Include:
+- أثمنة واضحة
+- اختيار المدة المناسبة
+- تواصل ساهل عبر واتساب
+- معلومات قبل تأكيد الطلب
+
+Only promise services that the business actually provides.
+
+E. HOW IT WORKS
+Show three steps:
+1. اختار مدة الاشتراك.
+2. تواصل معانا عبر واتساب.
+3. تأكد من التفاصيل وشروط التفعيل قبل إتمام الطلب.
+
+F. FAQ
+Implement an accessible accordion with questions about prices, duration, ordering, device compatibility, activation, and refunds.
+
+Use editable answers. Do not invent unknown product specifications or policies.
+
+G. FINAL CTA
+Headline:
+"اختار العرض ديالك وبدا الطلب!"
+
+Button:
+"تواصل معانا فالواتساب"
+
+H. FOOTER
+Include the Streemly+ brand name, contact details, and editable links for terms, privacy, and refund policies.
+
+## 8. MOBILE EXPERIENCE
+
+- Correct Arabic RTL rendering.
+- Responsive design on all common screen sizes.
+- A sticky mobile CTA with "شوف العروض" and "واتساب".
+- Large, touch-friendly buttons.
+- No horizontal overflow.
+- The sticky CTA must not obscure page content.
+- Images must load correctly after deployment.
+- Optimize image sizes without unnecessarily reducing visual quality.
+
+## 9. TECHNICAL REQUIREMENTS
+
+- Preserve the existing framework where possible.
+- Do not replace a working project with a different framework unnecessarily.
+- Use reusable components and clean, maintainable code.
+- Ensure all internal links and buttons work.
+- Add an appropriate page title, meta description, and social sharing metadata.
+- Do not add fake reviews, fake customer counts, fake countdowns, or fabricated scarcity.
+- Do not implement fake payment confirmations or collect payment-card information.
+- Do not expose secrets or API keys in frontend code.
+
+## 10. TEST AND VERIFY
+
+After implementation:
+
+1. Run the application and fix build errors.
+2. Check all page sections in the preview.
+3. Verify the Streemly+ name appears consistently.
+4. Verify the black-and-yellow theme.
+5. Check the hero image path and confirm whether the original asset is present.
+6. Verify the three prices.
+7. Test all three WhatsApp URLs and their prefilled messages.
+8. Test the responsive mobile layout and RTL alignment.
+9. Check browser console errors and broken assets.
+10. Confirm that the application can be deployed without relying on temporary files.
+
+## 11. FINAL REPORT
+
+When finished, tell me:
+- What files you changed.
+- Whether the original hero image was found and restored.
+- The exact path of the hero image.
+- Where to edit the three subscription prices.
+- Where to edit the WhatsApp number and messages.
+- How to run and publish the website.
+
+Do not stop at explaining what needs to be done. Implement the changes in the existing Replit project, run the application, and fix any issues you can verify.

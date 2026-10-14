@@ -1,0 +1,1 @@
+- [Streemly brand boundaries](streemly-brand-boundaries.md) — keep Streemly+ visibly independent from TOD unless the user confirms authorization.

@@ -1,0 +1,404 @@
+# MASTER PROMPT — BUILD MY PROFESSIONAL STREEMLY+ LANDING PAGE
+
+Act as a senior frontend developer, UI/UX designer, and conversion optimization specialist.
+
+I have an existing design created with Google Stitch and its exported files have been imported into this Replit project.
+
+Your mission is to turn the existing design into a complete, professional, responsive, production-ready landing page for my Moroccan streaming subscription business, **Streemly+**.
+
+Do not just describe the solution or generate a plan. Inspect the existing files, implement the website, run it, and fix all verifiable issues.
+
+IMPORTANT: Preserve the existing Stitch design and assets wherever possible. Do not rebuild the project from scratch unless absolutely necessary.
+
+# 1. BRAND IDENTITY
+
+Brand name: Streemly+
+
+Replace every occurrence of:
+- ProStream MA
+- ProStream
+- Any previous brand name belonging to this project
+
+with Streemly+.
+
+Update the header, wordmark, browser title, footer, metadata, and other visible brand references.
+
+Create a clean, premium wordmark displaying "Streemly+" if the existing logo is editable. Make the plus sign distinctive but readable.
+
+Do not rename unrelated dependencies or libraries.
+
+# 2. VISUAL DESIGN — BLACK AND YELLOW
+
+Create a premium sports-streaming aesthetic inspired by the contrast and energy of black-and-yellow sports branding.
+
+Use this exact palette:
+- Primary black: #000000
+- Secondary charcoal: #111111
+- Accent yellow: #FFD500
+- White: #FFFFFF
+- Secondary grey: #A3A3A3
+
+Design requirements:
+- Deep black backgrounds with subtle charcoal sections.
+- Bright yellow prices and CTA buttons.
+- White headings with selected words highlighted in yellow.
+- Elegant pricing cards with subtle yellow borders.
+- Strong typography and generous spacing.
+- Premium football stadium atmosphere.
+- Tasteful lighting effects and subtle animations.
+- Clean, modern visual hierarchy.
+- No excessive gradients, clutter, or distracting effects.
+
+The result must look like a premium digital subscription brand, not a generic template.
+
+Use an original visual identity. Do not copy the official TOD logo or imply that Streemly+ is an official TOD website or authorized reseller unless authorization exists.
+
+# 3. STITCH DESIGN PRESERVATION
+
+Inspect all files imported from Google Stitch before making changes.
+
+Use the existing Stitch layout as the primary design reference.
+
+Preserve:
+- Existing section order and layout.
+- Typography and spacing where appropriate.
+- Existing uploaded images and design assets.
+- Existing component structure where it works.
+- The intended mobile and desktop layouts.
+
+Make only the changes needed to implement this specification and improve the quality of the existing design.
+
+Do not delete working sections or replace the entire design with a different template.
+
+# 4. CRITICAL IMAGE RESTORATION
+
+The original hero image was previously supplied during the design process, but it was missing from the rendered page after importing the Stitch files into Replit.
+
+Investigate and resolve this issue before considering the website complete.
+
+First, inspect:
+- All uploaded image files.
+- The public directory.
+- src/assets and other asset folders.
+- Existing image imports and paths.
+- The hero component and its CSS.
+- Broken image references, filename mismatches, and CSS visibility issues.
+
+If the original hero image exists, use that exact image. Do not replace it with a different stock photo or a generic substitute.
+
+If necessary, place the actual image file inside:
+public/images/
+
+Use a correct public URL such as:
+ /images/hero-streemly.webp
+
+The path above is an example. Match the actual filename and extension of the real asset.
+
+Requirements:
+- Never stretch or distort the image.
+- Use appropriate object-fit and positioning.
+- Preserve important subjects when cropping.
+- Make the image work in development and after deployment.
+- Avoid temporary file paths or external image URLs that may break.
+- Keep the original image quality as high as reasonably practical.
+
+If the original image file is genuinely missing, do not pretend it has been restored. Tell me explicitly that I need to upload the image file, continue implementing the rest of the page, and leave the hero image component ready for the real asset.
+
+Do not use an emoji, blank gradient, or unrelated stock image as a substitute for the original image.
+
+# 5. WEBSITE LANGUAGE AND RTL
+
+The entire customer-facing website must use Moroccan Darija written in Arabic script.
+
+Requirements:
+- Correct right-to-left layout.
+- Correct Arabic text alignment.
+- Readable Arabic font with consistent typography.
+- Correct spacing between Arabic and Latin text such as FULL HD.
+- Prices displayed clearly in Moroccan dirhams.
+- Natural, concise Moroccan wording.
+- Responsive layout on desktop, tablet, and mobile.
+
+Set the appropriate HTML language and direction attributes for the Arabic interface.
+
+# 6. HERO SECTION
+
+Create a visually impressive hero section using the original image when available.
+
+Headline:
+"الفرجة اللي كتعشق، اختار ليها الاشتراك المناسب!"
+
+Description:
+"اختار المدة اللي تناسبك، تعرّف على الأثمنة، وتواصل معانا بسهولة عبر واتساب."
+
+Primary button:
+"شوف العروض"
+
+Action: Smoothly scroll to the subscription pricing section.
+
+Secondary button:
+"تواصل معانا"
+
+Action: Open a WhatsApp conversation with my business.
+
+Design:
+- Strong white headline with yellow highlights.
+- Black background.
+- Original hero image integrated naturally.
+- Clear CTA buttons visible without excessive scrolling on mobile.
+- Premium sports-streaming visual atmosphere.
+
+# 7. EXACT SUBSCRIPTION PRICES
+
+Create three professional pricing cards.
+
+PLAN A:
+Name: اشتراك 3 أشهر
+Duration: 3 أشهر
+Quality: FULL HD
+Price: 180 درهم
+Button: طلب الاشتراك
+
+PLAN B:
+Name: اشتراك 6 أشهر
+Duration: 6 أشهر
+Quality: FULL HD
+Price: 350 درهم
+Button: طلب الاشتراك
+
+PLAN C:
+Name: اشتراك سنة كاملة
+Duration: 12 شهر
+Quality: FULL HD
+Price: 650 درهم
+Button: طلب الاشتراك
+
+IMPORTANT:
+- These prices are final and must remain exactly as provided.
+- Do not add setup fees or hidden charges to the displayed prices.
+- Do not invent discounts, device limits, streaming features, or guarantees.
+- Do not label any plan "most popular" without verified evidence.
+- Make the annual card visually attractive without misleading claims.
+- Use large yellow prices and clear white descriptions.
+- Use consistent card heights and responsive spacing.
+- Stack cards vertically on mobile and arrange them appropriately on larger screens.
+
+Store all subscription data in one easy-to-edit configuration file or array.
+
+# 8. WHATSAPP ORDER INTEGRATION
+
+My business WhatsApp number:
+
++212627899976
+
+Use this WhatsApp base URL:
+
+https://wa.me/212627899976
+
+Every pricing button must open WhatsApp with the correct prefilled message.
+
+For the 3-month plan:
+
+"سلام، بغيت نعرف التفاصيل ديال اشتراك TOD Full HD لمدة 3 أشهر بثمن 180 درهم."
+
+For the 6-month plan:
+
+"سلام، بغيت نعرف التفاصيل ديال اشتراك TOD Full HD لمدة 6 أشهر بثمن 350 درهم."
+
+For the annual plan:
+
+"سلام، بغيت نعرف التفاصيل ديال اشتراك TOD Full HD لمدة سنة بثمن 650 درهم."
+
+Technical requirements:
+- Use JavaScript encodeURIComponent() to encode each message.
+- Generate the correct URL for each plan.
+- Open the WhatsApp chat in a new tab where supported.
+- Use safe link attributes.
+- Test all three URLs.
+- Do not use the same generic message for all three plans.
+
+Add a general contact button with this prefilled message:
+
+"سلام، بغيت نعرف العروض المتوفرة عندكم."
+
+Keep the phone number and messages in one configuration file so they can be edited easily.
+
+Do not build fake payment processing or claim that a subscription has been purchased merely because someone clicked a WhatsApp button.
+
+# 9. WHY CHOOSE STREEMLY+
+
+Section title:
+"علاش تختار العرض المناسب معانا؟"
+
+Create four simple feature cards:
+1. "أثمنة واضحة"
+2. "اختار المدة اللي تناسبك"
+3. "تواصل ساهل عبر واتساب"
+4. "معلومات قبل تأكيد الطلب"
+
+Use simple icons, short descriptions, and the black-and-yellow design system.
+
+Only advertise services the business actually provides.
+
+# 10. HOW TO ORDER
+
+Section title:
+"كيفاش تطلب الاشتراك؟"
+
+Step 1:
+Title: "اختار المدة"
+Description: "شوف العروض واختار الاشتراك اللي مناسب ليك."
+
+Step 2:
+Title: "تواصل معانا"
+Description: "ضغط على زر الطلب باش تتواصل معانا عبر واتساب."
+
+Step 3:
+Title: "أكد التفاصيل"
+Description: "تأكد من شروط الاشتراك والتفعيل قبل إتمام الطلب."
+
+Use a clean three-step layout with numbered indicators and yellow highlights.
+
+# 11. FAQ ACCORDION
+
+Create a functional, accessible FAQ accordion in Moroccan Darija.
+
+Questions:
+- شحال ثمن اشتراك 3 أشهر؟
+- شحال ثمن اشتراك 6 أشهر؟
+- شحال ثمن الاشتراك السنوي؟
+- كيفاش نطلب الاشتراك؟
+- شنو الأجهزة المتوافقة؟
+- شنو شروط الاشتراك والتفعيل؟
+- واش كاين استرجاع للفلوس؟
+
+Known answers:
+- اشتراك 3 أشهر: 180 درهم.
+- اشتراك 6 أشهر: 350 درهم.
+- اشتراك سنة كاملة: 650 درهم.
+- باش تطلب، اختار العرض وضغط على زر واتساب.
+
+For technical compatibility, activation conditions, and refund policies, use editable answers and do not invent unknown details.
+
+The accordion must work with mouse, touch, and keyboard.
+
+# 12. FINAL CONVERSION SECTION
+
+Create a visually strong final CTA section.
+
+Headline:
+"اختار العرض ديالك وبدا الطلب!"
+
+Description:
+"عندك شي سؤال على الاشتراك؟ تواصل معانا عبر واتساب باش تعرف التفاصيل."
+
+Button:
+"تواصل معانا فالواتساب"
+
+Link:
+https://wa.me/212627899976
+
+Use a black background, yellow accents, and a clean sports-inspired visual.
+
+# 13. HEADER, FOOTER, AND NAVIGATION
+
+Header:
+- Streemly+ wordmark.
+- Simple Arabic navigation.
+- Subscription CTA.
+- WhatsApp contact link.
+
+Navigation items:
+- الرئيسية
+- العروض
+- الأسئلة الشائعة
+- تواصل معانا
+
+Each navigation item must work and navigate to the appropriate section.
+
+Footer:
+- Streemly+ brand.
+- WhatsApp contact information.
+- Terms and conditions.
+- Privacy policy.
+- Refund policy.
+
+Create editable policy pages or appropriate placeholder routes if these pages are not yet supplied. Do not invent legal guarantees or claim the policies have been legally reviewed.
+
+Clearly identify the business as independent unless official authorization exists.
+
+# 14. MOBILE EXPERIENCE
+
+Make the entire website mobile-first and responsive.
+
+Requirements:
+- Correct Arabic RTL layout on small screens.
+- No horizontal overflow.
+- Large touch-friendly buttons.
+- Fast-loading images.
+- Consistent card spacing.
+- Sticky mobile CTA at the bottom with two buttons:
+  "شوف العروض"
+  "واتساب"
+- Ensure the sticky bar does not cover content, pricing, FAQ controls, or the footer.
+- Ensure the WhatsApp button opens the correct conversation.
+
+Check the layout on narrow smartphone screens and desktop browsers.
+
+# 15. PERFORMANCE, ACCESSIBILITY, AND SEO
+
+- Preserve the existing project framework where practical.
+- Use reusable components and maintainable code.
+- Use semantic HTML.
+- Provide appropriate image alt text.
+- Maintain accessible contrast and visible focus states.
+- Add a suitable page title and meta description.
+- Add social sharing metadata.
+- Use an appropriate favicon if an asset is available.
+- Avoid unnecessary libraries and oversized assets.
+- Do not expose API keys, passwords, or private configuration values.
+- Do not collect payment-card information.
+- Do not add fabricated testimonials, fake reviews, fake sales counters, fake countdowns, or false scarcity.
+
+Suggested page title:
+"Streemly+ | عروض اشتراك Full HD"
+
+Suggested meta description:
+"اكتشف عروض اشتراك Full HD لمدة 3 أشهر أو 6 أشهر أو سنة، وتواصل معانا لمعرفة التفاصيل."
+
+# 16. TESTING AND QUALITY CONTROL
+
+Before declaring the task complete:
+
+1. Inspect the existing project structure.
+2. Implement the changes in the existing project.
+3. Run the application.
+4. Fix build and runtime errors.
+5. Verify that Streemly+ replaces the old brand name throughout the site.
+6. Verify the black-and-yellow color palette.
+7. Verify all three prices.
+8. Test the exact WhatsApp number and plan-specific messages.
+9. Verify the original hero image is loaded if its file exists.
+10. If the original image is missing, clearly report that fact.
+11. Check Arabic text direction and alignment.
+12. Test the mobile layout.
+13. Check for broken links and missing assets.
+14. Verify that the page remains functional after deployment.
+
+Do not report a test as successful unless you have actually checked it.
+
+# 17. FINAL DELIVERY
+
+When implementation is complete, provide a concise report explaining:
+
+- Which files were changed.
+- Whether the original hero image was found.
+- The exact image filename and path.
+- Where to edit subscription prices.
+- Where to edit the WhatsApp number and messages.
+- How to run the project.
+- How to deploy and publish the website.
+
+If the original image is missing, explicitly request that I upload the actual image file.
+
+FINAL INSTRUCTION: Build the complete Streemly+ landing page inside the existing Replit project. Preserve the Stitch design, implement the specified features, run the application, and fix the issues you can verify. Do not stop at a plan or a visual mockup.

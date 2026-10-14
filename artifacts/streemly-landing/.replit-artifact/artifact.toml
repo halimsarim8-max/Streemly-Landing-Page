@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Streemly+ Landing Page"
+description = "A responsive Arabic RTL landing page for Streemly+, a Moroccan streaming subscription business, with plan pricing, accessible FAQs, and WhatsApp ordering."
+version = "1.0.0"
+id = "artifacts/streemly-landing"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24886
+
+[services.development]
+run = "pnpm --filter @workspace/streemly-landing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/streemly-landing", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/streemly-landing/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24886"
+BASE_PATH = "/"
